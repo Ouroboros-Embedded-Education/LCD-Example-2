@@ -49,6 +49,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -57,20 +59,32 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define LCD_D7_Pin GPIO_PIN_2
-#define LCD_D7_GPIO_Port GPIOA
-#define LCD_D6_Pin GPIO_PIN_3
-#define LCD_D6_GPIO_Port GPIOA
-#define LCD_D5_Pin GPIO_PIN_4
-#define LCD_D5_GPIO_Port GPIOA
-#define LCD_D4_Pin GPIO_PIN_5
-#define LCD_D4_GPIO_Port GPIOA
-#define LCD_E_Pin GPIO_PIN_6
-#define LCD_E_GPIO_Port GPIOA
-#define LCD_RS_Pin GPIO_PIN_7
-#define LCD_RS_GPIO_Port GPIOA
-#define LCD_BL_Pin GPIO_PIN_8
-#define LCD_BL_GPIO_Port GPIOB
+#define LCD1_D7_Pin GPIO_PIN_2
+#define LCD1_D7_GPIO_Port GPIOA
+#define LCD1_D6_Pin GPIO_PIN_3
+#define LCD1_D6_GPIO_Port GPIOA
+#define LCD1_D5_Pin GPIO_PIN_4
+#define LCD1_D5_GPIO_Port GPIOA
+#define LCD1_D4_Pin GPIO_PIN_5
+#define LCD1_D4_GPIO_Port GPIOA
+#define LCD1_E_Pin GPIO_PIN_6
+#define LCD1_E_GPIO_Port GPIOA
+#define LCD1_RS_Pin GPIO_PIN_7
+#define LCD1_RS_GPIO_Port GPIOA
+#define LCD2_D4_Pin GPIO_PIN_8
+#define LCD2_D4_GPIO_Port GPIOA
+#define LCD2_D5_Pin GPIO_PIN_9
+#define LCD2_D5_GPIO_Port GPIOA
+#define LCD2_D6_Pin GPIO_PIN_10
+#define LCD2_D6_GPIO_Port GPIOA
+#define LCD2_D7_Pin GPIO_PIN_11
+#define LCD2_D7_GPIO_Port GPIOA
+#define LCD2_RS_Pin GPIO_PIN_12
+#define LCD2_RS_GPIO_Port GPIOA
+#define LCD2_E_Pin GPIO_PIN_15
+#define LCD2_E_GPIO_Port GPIOA
+#define LCD1_BL_Pin GPIO_PIN_8
+#define LCD1_BL_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
